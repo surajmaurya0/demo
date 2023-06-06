@@ -1,3 +1,3 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://127.0.0.1:27017/crud')
+mongoose.connect('mongodb+srv://surajdevv1:Tv6Sov2ySxskNnyo@cluster0.xdfnvfy.mongodb.net/')
