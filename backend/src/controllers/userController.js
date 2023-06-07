@@ -7,7 +7,8 @@ const { send_mail_otp, send_mail_link } = require('./nodeMailerController')
 
 const jwt_secret = process.env.JWT_SECRET
 function getAllUsers(req, res) {
-    res.send("sedn")
+    console.log("working")
+    res.send("send")
 }
 // new user regsiter 
 async function regsiterUser(req, res) {
