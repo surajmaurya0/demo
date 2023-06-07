@@ -40,6 +40,7 @@ function Setting() {
         token:login
      }
      const check = useParams()
+     console,log(check)
      if(login){
 
         //  useEffect(()=>{
