@@ -7,7 +7,7 @@ const authMiddleware = require('../middlewares/authMiddleware')
 
 //define user-related routes
 
-router.get('/',userController.getAllUsers)
+// router.get('/',userController.getAllUsers)
 router.post('/register',userController.regsiterUser)
 router.post('/login',userController.loginUser)
 router.post('/profile',authMiddleware,userController.profile)
