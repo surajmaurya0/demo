@@ -9,7 +9,7 @@ export const getAllPosts = () => {
 export const registerUser = (user, navigate) => {
     return async (dispatch) => {
         try {
-            const response = await fetch("http://localhost:5000/users/register", {
+            const response = await fetch("https://test1-5-kg9h.onrender.com/users/register", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -32,7 +32,7 @@ export const registerUser = (user, navigate) => {
 export const logInUser = (userData, navigate) => {
     return async (dispatch) => {
         try {
-            const response = await fetch("http://localhost:5000/users/login", {
+            const response = await fetch("https://test1-5-kg9h.onrender.com/users/login", {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json"
@@ -54,7 +54,7 @@ export const logInUser = (userData, navigate) => {
 export const ProfileUser = (token) => {
     return async (dispatch) => {
         try {
-            const response = await fetch("http://localhost:5000/users/profile", {
+            const response = await fetch("https://test1-5-kg9h.onrender.com/users/profile", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -75,7 +75,7 @@ export const ProfileUser = (token) => {
 export const ProfileUserUpdate= (user,navigate)=>{
     return async (dispatch) => {
         try {
-            const response = await fetch("http://localhost:5000/users/profileUpdate",{
+            const response = await fetch("https://test1-5-kg9h.onrender.com/users/profileUpdate",{
                 method:'POST',
                 headers:{
                     "Content-Type": "application/json"
@@ -99,7 +99,7 @@ export const ProfileUserUpdate= (user,navigate)=>{
 export const deleteUser = (user, navigate) => {
     return async (dispatch) => {
         try {
-            const response = await fetch("http://localhost:5000/users/deleteUser", {
+            const response = await fetch("https://test1-5-kg9h.onrender.com/users/deleteUser", {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'
@@ -122,7 +122,7 @@ export const deleteUser = (user, navigate) => {
 export const changePswdLogin = (user, navigate) => {
     return async (dispatch) => {
         try {
-            const response = await fetch('http://localhost:5000/users/changepswdlogin', {
+            const response = await fetch('https://test1-5-kg9h.onrender.com/users/changepswdlogin', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -146,7 +146,7 @@ export const changePswdLogin = (user, navigate) => {
 export const otpGenerate = (email, setOtpSend) => {
     return async (dispatch) => {
         try {
-            const response = await fetch("http://localhost:5000/users/offlinepswdOtp", {
+            const response = await fetch("https://test1-5-kg9h.onrender.com/users/offlinepswdOtp", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -170,7 +170,7 @@ export const otpGenerate = (email, setOtpSend) => {
 export const otpGenerateVerify = (data, navigate) => {
     return async (dispatch) => {
         try {
-            const response = await fetch("http://localhost:5000/users/offlinepswdOtp_verify", {
+            const response = await fetch("https://test1-5-kg9h.onrender.com/users/offlinepswdOtp_verify", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -192,7 +192,7 @@ export const otpGenerateVerify = (data, navigate) => {
 export const linkGenerate = (email, navigate) => {
     return async (dispatch) => {
         try {
-            const response = await fetch('http://localhost:5000/users/offlinepswdLink', {
+            const response = await fetch('https://test1-5-kg9h.onrender.com/users/offlinepswdLink', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -214,7 +214,7 @@ export const linkGenerate = (email, navigate) => {
 export const linkGenerateVerify = (user, navigate) => {
     return async (dispatch) => {
         try {
-            const response = await fetch("http://localhost:5000/users/offlinepswdLinkVerify", {
+            const response = await fetch("https://test1-5-kg9h.onrender.com/users/offlinepswdLinkVerify", {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json'
