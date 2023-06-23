@@ -1,6 +1,7 @@
 # demo
 mern demo(react js,node js)
-frontend:{
+
+# frontend:{
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
@@ -20,7 +21,7 @@ frontend:{
     "web-vitals": "^2.1.4"
   }
 }
-backend:{
+# backend:{
  "dependencies": {
     "bcrypt": "^5.1.0",
     "cors": "^2.8.5",
